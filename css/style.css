@@ -1,0 +1,828 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Oswald:wght@200;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+.main_overly {
+  position: relative;
+  z-index: 1;
+}
+.main_overly::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+/* ===================================
+         common csss 
+================================== */
+/* ===================================
+         menu part start 
+================================== */
+.main_menu {
+  background: #a0868683;
+  height: 50px;
+ margin-top:30px;
+  position: absolute;
+  top:0px;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.main_menu ul {
+}
+.main_menu ul li {
+}
+.main_menu ul li a:hover {
+  background: #ffff;
+  color:#9e9e9e;
+}
+.main_menu ul li a {
+  font-size: 14px;
+  color: #f1f1f1;
+  font-weight: 4000;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  line-height: 50px;
+  padding: 0 12px;
+  position: relative;
+  display:block;
+}
+.main_menu ul li a:hover:before {
+  width: 100%;
+}
+.main_menu ul li a:before {
+  position: absolute;
+  width: 0;
+  height: 2px;
+  content: "";
+  background: #e23e38;
+  bottom: 0;
+  left: 0;
+  transition: all linear 0.3s;
+}
+
+.main_menu .navbar-brand {
+  height: 70px;
+  width: 245px;
+  background: #323232e5;
+  line-height: 70px;
+  text-align: center;
+  transform: skewx(-30deg);
+  margin-top: -5px;
+  position: relative;
+}
+.main_menu .navbar-brand:before {
+  left: 0;
+}
+.main_menu .navbar-brand:after {
+  right: 0;
+}
+.main_menu .navbar-brand:before,
+.main_menu .navbar-brand:after {
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #000;
+  content: "";
+}
+.main_menu .navbar-brand img {
+  transform: skewx(30deg);
+}
+/* ===================================
+         menu part end 
+================================== */
+/* ===================================
+         banner part start 
+================================== */
+.banner_items {
+  padding: 250px 0 117px;
+}
+.banner_items::after {
+  background: rgba(0, 0, 0, 0.459);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.banner_text {
+  padding: 50px;
+}
+.banner_text h2 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  padding-bottom:16px;
+  position:relative;
+}
+.banner_text h2:before{
+  position:absolute;
+  top:50%;
+  right:-33px;
+  content:"";
+  width:103px;
+  background: #e23e38;
+  height:2px;
+  transform:translateY(-50%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 24% 100%);
+}
+.banner_text h2::after{
+  position:absolute;
+  top:50%;
+  left:-33px;
+  content:"";
+  width:170px;
+  background: #e23e38;
+  height:2px;
+  transform:translateY(-50%);
+  clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+
+
+
+}
+.banner_text h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 60px;
+  font-family: "Oswald", sans-serif;
+  color: #e23e38;
+  text-transform: UPPERCASE;
+  font-weight: 700;
+  position:relative;
+
+}
+
+.banner_text h1:before{
+  position:absolute;
+  top:-26px;
+  right:-33px;
+  content:"";
+  width:1px;
+  background: #e23e38;
+  height:199px;
+ 
+
+}
+.banner_text h1::after{
+  position:absolute;
+  top:-26px;
+  left:-33px;
+  content:"";
+  width:2px;
+  background: #e23e38;
+  height:199px;
+}
+
+.banner_text p {
+  font-size: 13px;
+  color: #dddddd;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  line-height: 18px;
+  padding:15px 0;
+  position:relative;
+}
+.banner_text p:before{
+  position: absolute;
+top: 99px;
+right: -33px;
+content: "";
+width: 30px;
+background: #e23e38;
+height: 1px;
+
+}
+.banner_text p::after{
+  position: absolute;
+  top: 99px;
+  left: -33px;
+  content: "";
+  width: 64px;
+  background: #e23e38;
+  height: 1px;
+
+}
+ 
+.banner_text a:hover {
+  background: #e23e38;
+  border-color: #e23e38;
+}
+.banner_text a {
+  font-family: "Oswald", sans-serif;
+  border: 1px solid #f1f1f1;
+  padding: 15px;
+  font-weight: 400;
+  color: #ffff;
+  margin-left: 25px;
+  transition:all linear .3s;
+  
+}
+#banner .slick-dots .slick-active button{
+  background: #999;
+  border-color:#9999
+}
+#banner .slick-dots{
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  bottom:30px;
+  display:flex;
+}
+#banner .slick-dots li{
+  margin-right:10px;
+ }
+#banner .slick-dots li button{ 
+  font-size:0px;
+  width:30px;
+  height:30px;
+  border:2px solid #e23e38;
+  border-radius:50%;
+  background: transparent;
+}
+/* ===================================
+         banner part end 
+================================== */
+/* ===================================
+         about part start 
+================================== */
+#about {
+  padding: 80px 0;
+}
+.about_img {
+  position: relative;
+}
+.about_img .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+}
+.about_logo {
+}
+.about_logo h1 {
+  font-weight: 400;
+  color: #222222;
+  font-family: "Oswald", sans-serif;
+
+  font-size: 22;
+}
+
+.about-text p {
+  font-size: 17px;
+  color: #444444;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: "Open Sans", sans-serif;
+}
+.about-text p span {
+  padding-top: 35px;
+  display: block;
+}
+
+/* ===================================
+         about part end 
+================================== */
+/* ===================================
+         our part start 
+================================== */
+.gallay {
+  padding-top: 30px;
+}
+.common {
+  padding-bottom: 20px;
+}
+.common h1 {
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+.our_img {
+  position: relative;
+  margin-bottom: 30px;
+}
+.our_img:hover .overaly {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1) rotate(360deg);
+}
+.our_img .overaly {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background: #9d4943a9;
+  border: 5px solid #ddddd3;
+  opacity: 0;
+  visibility: hidden;
+  transition: all linear 0.3s;
+  transform: scale(0) rotate(0);
+}
+.our_img .overaly a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #ffff;
+}
+
+/* ===================================
+         our part end 
+================================== */
+/* ===================================
+         team part start 
+================================== */
+#team {
+  padding: 75px 0;
+}
+.team_single {
+  position: relative;
+}
+.team_single .overlay {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background: #9d4943a9;
+  border: 5px solid #ddddd3;
+  transform: scale(0);
+  transition: all linear 0.3s;
+}
+.team_main .team_single:hover .overlay {
+  transform: scale(1);
+}
+.team_single .overlay ul {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translatey(-50%);
+}
+
+.team_single .overlay ul li a {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 2px solid #fff;
+  color: #ffff;
+  font-size: 16px;
+  margin-bottom: 10px;
+  transition: all linear.3s;
+}
+.team_single .overlay ul li:hover a {
+  color: #1da0f2;
+  background: #fff;
+  border-color: #ffff;
+}
+.team_text {
+  padding: 20px;
+}
+.team_text h3 {
+  font-size: 14px;
+  color: #222222;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+.team_text h4 {
+  font-size: 14px;
+  color: #222222;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  padding-top: 5px;
+}
+.team_main:hover .team_text p {
+  transform: scale(1);
+}
+.team_text p {
+  font-size: 13px;
+  color: #444444;
+  font-family: "Open Sans", sans-serif;
+  transform: scale(0);
+  transition: all linear 0.3s;
+}
+.team_main {
+  padding-top: 72px;
+  transition: all linear 0.3s;
+}
+.team_main:hover {
+  transform: translatey(-42px);
+}
+.team_main:hover .team_text {
+  border: 2px solid #dddddd;
+}
+.team_slider .slick-slide {
+margin:0 12px;
+}
+
+/* ===================================
+         team part end 
+================================== */
+/* ===================================
+         menu part start 
+================================== */
+.testimonial::after {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.685);
+}
+.testimonial {
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+
+.testimonial_text h5 {
+  font-size: 14px;
+  color: #f1f1f1;
+  font-family: "Oswald", sans-serif;
+}
+.testimonial_text h6 {
+  font-size: 14px;
+  color: #f1f1f1;
+  font-family: "Oswald", sans-serif;
+  padding: 7px 0;
+}
+.testimonial_text span {
+  color: #e23e38;
+}
+.testimonial_single p {
+  color: #dddddd;
+  line-height: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  padding-top: 8px;
+}
+.autoplay .slick-slide {
+  padding: 0 12px;
+}
+.autoplay .slick-dots {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30px;
+  width: auto;
+  display: flex;
+}
+.autoplay .slick-dots .slick-active button {
+  background: #000;
+  border-color: #000;
+}
+.autoplay .slick-dots li {
+  margin-right: 10px;
+}
+.autoplay .slick-dots li button {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  background: transparent;
+  border-radius: 50%;
+  font-size: 0px;
+}
+/* ===================================
+         menu part end 
+================================== */
+/* ===================================
+         membership  part start 
+================================== */
+#membership_area {
+  padding: 80px 0;
+}
+.membership_wapper {
+  background: #f1f1f1;
+  margin-top: 30px;
+}
+.membership_wapper > h1 {
+  font-size: 16px;
+  color: #222222;
+  font-weight: 700;
+  font-family: "Oswald", sans-serif;
+  padding: 15px 0;
+  background: #dddddd;
+  text-transform: uppercase;
+  transition: all linear 0.3s;
+}
+.membership_wapper:hover > h2,
+.membership_wapper:hover > h1 {
+  background: #e23e38;
+  color: #fff;
+}
+.membership_wapper ul {
+}
+.membership_wapper ul li {
+  font-size: 14px;
+  color: #444444;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  padding: 24px 0;
+}
+.membership_wapper h2 {
+  padding: 10px 0;
+  font-size: 16px;
+  background: #dddddd;
+  transition: all linear 0.3s;
+}
+.membership_bg {
+  padding: 35px 0;
+}
+.membership_bg > h1 {
+  font-size: 50px;
+  font-family: "Oswald", sans-serif;
+  color: #ffff;
+  font-weight: 500;
+  font-family: "Oswald", sans-serif;
+}
+.membership_bg h1 span {
+  font-size: 29px;
+}
+/* ===================================
+         membership  part end 
+================================== */
+/* ===================================
+         counter part start 
+================================== */
+#counte_wrapper {
+  padding: 45px 0;
+  position: relative;
+  margin-bottom: 80px;
+}
+#counte_wrapper:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000c7;
+  content: "";
+}
+.single_count {
+  position: relative;
+  z-index: 1;
+}
+.single_count h1 {
+  font-size: 50px;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Oswald", sans-serif;
+}
+.single_count span {
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  font-weight: 400;
+}
+/* ===================================
+         counter part end 
+================================== */
+/* ===================================
+         our class part start 
+================================== */
+#our_class_area {
+  padding-bottom: 76px;
+}
+.class_menu {
+  background: #f1f1f1;
+  height: 50px;
+  margin-bottom: 9px;
+}
+.class_menu li {
+  width: 16.66%;
+}
+.class_menu li button {
+  height: 50px;
+  font-size: 14px;
+  color: #222222;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  width: 100%;
+}
+.class_menu .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background: #e23e38;
+  border-radius: 0;
+}
+
+.class_body ul li:nth-child(5),
+.class_body ul li:nth-child(10) {
+  margin-right: 0;
+}
+.class_body ul li {
+  width: 19.44%;
+  background: #f1f1f1;
+  text-align: center;
+  padding: 50px 0;
+  margin-right: 9px;
+  margin-bottom: 9px;
+  transition: all linear.3s;
+  font-size:16px;
+  color:#222222;
+  font-family: 'Open Sans', sans-serif;
+
+}
+.class_body ul li:hover {
+  background: #e23e38;
+  transform: scale(1);
+}
+.class_body ul li:hover i {
+  color: #fff;
+}
+.class_body ul li:hover p {
+  color: #dddddd;
+}
+.class_body ul li i {
+  font-size: 50px;
+  color: #444444;
+}
+/* ===================================
+         our class part end 
+================================== */
+/* ===================================
+         slider logo part start 
+================================== */
+#logo{
+  margin:10px 0 80px;
+}
+.logo_wrapper{
+  width:18%;
+ 
+}
+.logo_active .slick-slide{
+  margin:0 12px;
+}
+.prev_left {
+  left: -55px;
+}
+.prev_right {
+  right: -55px;
+}
+.prev_left,
+.prev_right {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+  font-size: 25px;
+}
+
+/* ===================================
+         slider logo part end 
+================================== */
+/* ===================================
+         footer part start 
+================================== */
+#footer_area {
+  padding-top: 25px;
+}
+.footer_wrapper {
+  border-top: 2px solid #dddddd;
+  border-bottom: 2px solid #dddddd;
+  padding-top: 25px;
+}
+.footer_img{
+  padding-bottom:30px;
+}
+.footer_weiged h2 {
+  font-size: 15px;
+  color: #ffff;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+.footer_weiged ul {
+  margin-right: 55px;
+}
+.footer_weiged ul li {
+  font-size: 11px;
+  color: #dddddd;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+.footer_bottom ul li i {
+  font-size: 20px;
+  color: #1da1f2;
+}
+.footer_text {
+  padding-right: 70px;
+}
+.footer_bottom ul li p {
+  font-size: 9px;
+  color: #dddddd;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  line-height: 18px;
+  display: inline-block;
+  padding-left: 10px;
+}
+.footer_bottom ul li p a {
+  color: #dddddd;
+  font-size: 12px;
+}
+.footer_bottom ul li p > span {
+  font-family: "Open Sans", sans-serif;
+  display: block;
+  font-weight: 600;
+}
+.footer_bottom ul {
+  margin-bottom: 9px;
+}
+.hours_img >ul{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  margin-right:0;
+  
+}
+
+.hours_img ul li {
+	width: 60px;
+  margin: 3px 10px 0px 0;
+}
+
+.footer_text p {
+  font-size: 11px;
+  color: #dddddd;
+  font-family: "Open Sans", sans-serif;
+}
+.map_icons span {
+  display: inline-block;
+  color: #e23e38;
+}
+
+.get_social span:hover {
+  background: #e23e38;
+  border-color: #e23e38;
+}
+.get_social span {
+  color: #fff;
+  width: 30px;
+  line-height: 30px;
+  border: 2px solid #fff;
+  background: transparent;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  transition: all linear 0.3;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.foot_copy p {
+  font-size: 13px;
+  color: #ffff;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+}
+.foot_copy p a {
+  color: #e23e38;
+  display: inline-block;
+}
+.footer {
+  padding: 20px 0;
+}
+
+/* ===================================
+         footer part end 
+================================== */
